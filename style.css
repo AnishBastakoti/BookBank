@@ -1,22 +1,33 @@
+body{
+  background: #ddd;
+}
 #myDiv {
   text-align: center;
 }
 .container {
-  text-align: center;
-  color: #000000;
+  background-color: #;
 }
 .centered{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: max-content;
+  width: 25rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  border: 1px solid #dadce0;
+  overflow: hidden;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  height: 498px;
+  background: #f1f1f1;
 }
 p {
    font-size: 15px;
    font-family: serif;
    text-align: inherit;
    padding: 4em;
+   text-decoration-line: underline;
 }
 
 h1{
@@ -49,7 +60,6 @@ button:hover{
 }
 a:link{
   text-decoration: none;
-  color: #6962F7;
 }
 p:last-child{
   color: blue;
