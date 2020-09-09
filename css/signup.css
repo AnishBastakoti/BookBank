@@ -11,7 +11,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   margin: 0;
 }
 
@@ -19,9 +18,9 @@ body {
   background-color: #0072ff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  width: 400px;
-  max-width: 100%;
+  overflow: scroll;
+  width: 84vw;
+  height: 97vh;
 }
 
 .header {
@@ -39,15 +38,16 @@ body {
 }
 
 .form-control {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   position: relative;
 }
 
 .form-control label {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 38px;
   color: #fff;
+  font-size: 2em;
 }
 
 .form-control input {
@@ -55,8 +55,8 @@ body {
   border-radius: 4px;
   display: block;
   font-family: inherit;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 43px;
+  padding: 32px;
   width: 100%;
 }
 
@@ -76,7 +76,7 @@ body {
 .form-control i {
   visibility: hidden;
   position: absolute;
-  top: 40px;
+  top: 141px;
   right: 10px;
 }
 .form-control.success i.fa-check-circle {
@@ -91,7 +91,6 @@ body {
 .form-control small {
   color: #fff;
   position: absolute;
-  bottom: 0;
   left: 0;
   visibility: hidden;
 }
@@ -106,9 +105,13 @@ body {
     color: #fff;
     display: block;
     font-family: inherit;
-    font-size: 16px;
-    padding: 10px;
+    font-size: 33px;
+    padding: 22px;
     margin-top: 20px;
     width: 100%;
-    text-align: center;
+}
+
+@media (max-width: 599px) {
+.container {background-color: #fff}
+
 }
