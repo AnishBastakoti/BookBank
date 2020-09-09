@@ -1,23 +1,22 @@
 const form = document.getElementById('form');
 const username = document.getElementById('username');
-const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
+const email = document.getElementById('email');
 const phone = document.getElementById('phone');
 const dob = document.getElementById('dob');
 
-form.addEventListener('submit', e => {
+form.addEventListener('Creat_Account', e => {
     e.preventDefault();
 
     checkInputs();
 });
 
 function checkInputs() {
-    // trim to remove the whitespaces
     const usernameValue = username.value.trim();
-    const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
+    const emailValue = email.value.trim();
     const phoneValue = phone.value.trim();
     const dobValue = dob.value.trim();
 
@@ -25,14 +24,6 @@ function checkInputs() {
         setErrorFor(username, 'Username cannot be empty');
     } else {
         setSuccessFor(username);
-    }
-
-    if (emailValue === '') {
-        setErrorFor(email, 'Email cannot be empty');
-    } else if (!isEmail(emailValue)) {
-        setErrorFor(email, 'Not a valid email');
-    } else {
-        setSuccessFor(email);
     }
 
     if (passwordValue === '') {
@@ -48,6 +39,15 @@ function checkInputs() {
     } else {
         setSuccessFor(password2);
     }
+
+        if (emailValue === '') {
+            setErrorFor(email, 'Email cannot be empty');
+        } else if (!isEmail(emailValue)) {
+            setErrorFor(email, 'Not a valid email');
+        } else {
+            setSuccessFor(email);
+        }
+
     if (phoneValue === '') {
         setErrorFor(phone, 'Phone Number cannot be empty');
     } else {
@@ -63,13 +63,13 @@ function checkInputs() {
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
-    formControl.className = 'form-control error';
+    formControl.className = 'form-group error';
     small.innerText = message;
 }
 
 function setSuccessFor(input) {
     const formControl = input.parentElement;
-    formControl.className = 'form-control success';
+    formControl.className = 'form-group success';
 }
 
 function isEmail(email) {
