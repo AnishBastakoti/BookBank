@@ -6,7 +6,7 @@ const password2 = document.getElementById('password2');
 const phone = document.getElementById('phone');
 const dob = document.getElementById('dob');
 
-form.addEventListener('Sign up', e => {
+form.addEventListener('submit', e => {
     e.preventDefault();
 
     checkInputs();
@@ -22,13 +22,13 @@ function checkInputs() {
     const dobValue = dob.value.trim();
 
     if (usernameValue === '') {
-        setErrorFor(username, 'Username cannot be blank');
+        setErrorFor(username, 'Username cannot be empty');
     } else {
         setSuccessFor(username);
     }
 
     if (emailValue === '') {
-        setErrorFor(email, 'Email cannot be blank');
+        setErrorFor(email, 'Email cannot be empty');
     } else if (!isEmail(emailValue)) {
         setErrorFor(email, 'Not a valid email');
     } else {
@@ -36,17 +36,27 @@ function checkInputs() {
     }
 
     if (passwordValue === '') {
-        setErrorFor(password, 'Password cannot be blank');
+        setErrorFor(password, 'Password cannot be empty');
     } else {
         setSuccessFor(password);
     }
 
     if (password2Value === '') {
-        setErrorFor(password2, 'Password2 cannot be blank');
+        setErrorFor(password2, 'Password2 cannot be empty');
     } else if (passwordValue !== password2Value) {
         setErrorFor(password2, 'Passwords does not match');
     } else {
         setSuccessFor(password2);
+    }
+    if (phoneValue === '') {
+        setErrorFor(phone, 'Phone Number cannot be empty');
+    } else {
+        setSuccessFor(phone);
+    }
+    if (dobValue === '') {
+        setErrorFor(dob, 'Date of birth cannot be empty');
+    } else {
+        setSuccessFor(dob);
     }
 }
 

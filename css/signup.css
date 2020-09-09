@@ -47,6 +47,7 @@ body {
 .form-control label {
   display: inline-block;
   margin-bottom: 5px;
+  color: #fff;
 }
 
 .form-control input {
@@ -88,7 +89,7 @@ body {
 }
 
 .form-control small {
-  color: #e74c3c;
+  color: #fff;
   position: absolute;
   bottom: 0;
   left: 0;
