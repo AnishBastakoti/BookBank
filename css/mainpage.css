@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+}
+
+th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.box{
+  background-color: #ddd;
+  width: 100%;
+  padding: 2%;
+}
+.main-box{
+  background-color: pink;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+img{
+  width: 30%;
+}
+p{
+  text-align: center;
+  color: Blue;
+  font-weight:bold;
+  font-size: 1rem;
+
+}
