@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Info Page</title>
+  <link rel='icon' href="pictures/icon.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="css/book.css">
+</head>
+<body>
+<div class="slideshow-container">
+<div class="mySlides fade" style="background-color:rgb(85, 85, 85);">
+  <div class="numbertext">1 / 2</div>
+  <img src="https://creativeyatra.com/wp-content/uploads/2017/06/Celebration-Harry-Potter-books.jpg" alt="harry potter">
+  <div class="text">Image 1</div>
+</div>
+
+<div class="mySlides fade" style="background-color:rgb(85, 85, 85);">
+  <div class="numbertext">2 / 2</div>
+  <img src="http://1.bp.blogspot.com/-F7RTh483Uv4/UZOiFJZesbI/AAAAAAAABjU/Pp6qILfb9gU/s1600/harry+potter+books.jpg" alt="Sourous Stone">
+  <div class="text">Image 2</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+<p class="word"> Book Description </p>
+<i onclick="openNav()" class='fas fa-shopping-cart' style='font-size: 28px;
+    padding: 4px;
+    margin-left: 83%'></i>
+    <div id="checkout" class="sidnav2">
+<div class="desc">
+  <p> Author: JK Rowiling</p>
+  <p> Publish Date: 26 june 1997</p>
+  <h2>Rating </h2>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <div class="main">
+    <p>About book will be here</p>
+  </div>
+</div>
+<p class="para"> Price: 134$ </p>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <table>
+        <caption style="font-family: arial, sans-serif; font-weight: bold;
+color: aliceblue;">Order list</caption>
+  <tr>
+    <th>Book</th>
+    <th>Quantity</th>
+    <th>Price($)</th>
+  </tr>
+  <tr>
+    <td><small>Book1</small></td>
+    <td><input type="number" placeholder="1"></td>
+    <td>137.00</td>
+    <td>Delete</td>
+  </tr>
+  <tr>
+    <td><small>Book2</small></td>
+    <td><input type="number" placeholder="1"></td>
+    <td>123.99</td>
+    <td>Delete</td>
+  </tr>
+  <tr>
+    <td><small>Book3</small></td>
+    <td><input type="number" placeholder="1"></td>
+    <td>144.99</td>
+    <td>Delete</td>
+  </tr>
+  <tr>
+    <td><small>Book 5</small></td>
+    <td><input type="number" placeholder="1"></td>
+    <td>454.99</td>
+    <td>Delete</td>
+  </tr>
+</table>
+<a href="checkout.html"><span style="border: 4px solid #fff;
+    padding: 10px;
+    background: blueviolet;
+    color: aliceblue;
+    margin: 18%;
+    position: absolute;">Checkout</span></a>
+</div>
+</div>
+<span style="color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    background: blue;
+    border-radius: 12%;
+    display: block;
+    text-align: center" onclick="openNav()">Order Now</span>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script src="JS/checkout.js"></script>
+</body>
+</html>
