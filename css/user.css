@@ -1,0 +1,136 @@
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22rem;
+  padding: .5rem;
+  box-sizing: border-box;
+  border: 1px solid #dadce0;
+  overflow:hidden;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  height:636px;
+  background: #ddd;
+}
+.user-card{
+  height: 30%;
+  width:50%;
+  color: #000;
+}
+.user-img{
+  background-repeat: no-repeat;
+  width: 50%;
+  margin-left: 11em;
+  margin-top: -10.5em;
+  position: absolute;
+  height: 29%;
+}
+.info-btn{
+  background-color: #333;
+  color: #fff;
+  display: block;
+  padding: 7px 54px;
+  border-radius: 11px;
+  margin: 90px 63px;
+  cursor: pointer;
+}
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  overflow-y: hidden;
+  transition: 0.5s;
+  overflow: scroll;
+}
+.overlay .credit-info{
+  color: #000;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 1px;
+  right: 27px;
+  font-size: 43px;
+  color: blueviolet;
+}
+.overlay .closebtn:hover{
+  color: #000;
+}
+label {
+  margin-bottom: -4px;
+  display: block;
+}
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+  text-align: center;
+}
+input[type=text]{
+  width: 70%;
+  margin-bottom: 0px;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-left: 2em;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: lightgrey;
+}
+tr:nth-child(odd){background-color: lightgreen;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0px;
+}
+.col {
+  -ms-flex: 50%;
+  padding: 0 0px;
+}
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col1 {
+  -ms-flex: 50%;
+  padding: 0 0px;
+  margin-left: 11em;
+  margin-top: -3.8em;
+}
+a.update-button{
+  background-color: red;
+  color: #000;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 7px 108px;
+  margin: 1em 3em;
+  display: block;
+  text-align: center;
+}
+button:hover{
+  background-color: #000;
+  color: #fff;
+}
+.word {
+  margin-bottom: 4px;
+  display: block;
+  color: #000;
+  text-align: center;
+}
