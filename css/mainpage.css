@@ -1,32 +1,54 @@
 *{
   box-sizing: border-box;
 }
-
-th{
+table{
+  width: 210%;
+}
+tr{
+  height: 11vh;
+}
+td{
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
   background-color: #4CAF50;
   color: white;
 }
 .box{
-  background-color: #ddd;
+  background-color: aqua;
   width: 100%;
   padding: 2%;
+  overflow: scroll;
 }
 .main-box{
-  background-color: pink;
+  background-color: aliceblue;
   height: 100%;
   width: 100%;
   overflow: scroll;
 }
 img{
-  width: 30%;
+  width: 61%;
 }
 p{
   text-align: center;
   color: Blue;
   font-weight:bold;
   font-size: 1rem;
-
+}
+a{
+  padding: 10px 15px;
+  font-size: 44px;
+}
+i{
+  padding: 0 2px;
+  font-size: 44px;
+}
+input[type=text], select {
+  width: 64vw;
+  height: 6vh;
+  padding: 12px 20px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }

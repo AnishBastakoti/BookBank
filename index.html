@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Signup Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://yourdomain.com/apple-touch-icon-180x180.png">
     <link rel='icon' href="pictures/icon.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -15,7 +16,7 @@
     <div class="registration-form">
         <form id="form" class="form">
             <div class="form-icon">
-                <span><i class="icon icon-user"></i></span>
+                <p> Create Account Here</p>
             </div>
             <div class="form-group">
                 <input type="text" class="form-control item" id="username" placeholder="Username" />
@@ -30,25 +31,25 @@
 			          <small>Error message</small>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="password2" placeholder="Re-password" />
+                <input type="password" class="form-control item" id="password2" placeholder="Re-password" />
                 <i class="fas fa-check-circle"></i>
 			          <i class="fas fa-exclamation-circle"></i>
 			          <small>Error message</small>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="email" placeholder="info@domain.com" />
+                <input type="text" class="form-control item" id="email" placeholder="info@domain.com (Email)" />
                 <i class="fas fa-check-circle"></i>
 			          <i class="fas fa-exclamation-circle"></i>
 			          <small>Error message</small>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="phone" placeholder="XXX-XXX-XXX" />
+                <input type="text" class="form-control item" id="phone" placeholder="XXX-XXX-XXX [Phone Number]" />
                 <i class="fas fa-check-circle"></i>
 			          <i class="fas fa-exclamation-circle"></i>
 			          <small>Error message</small>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="dob" placeholder="DD/MM/YY" />
+                <input type="text" class="form-control item" id="dob" placeholder="DD/MM/YY[Date of Birth]" />
                 <i class="fas fa-check-circle"></i>
 			          <i class="fas fa-exclamation-circle"></i>
 			          <small>Error message</small>
@@ -66,7 +67,7 @@
             </div>
             <a href="Terms-and-conditions.pdf" target="blank">By creating account you agree the terms and Conditions click to read</a>
             <div class="form-group">
-                <button onclick='document.location="mainpage.html"' type="button" class="create-account">Create_Account</button>
+                <button onclick='document.location="mainpage.html"' type="button" class="create-account">Login</button>
             </div>
           </div>
           <div class="center">
@@ -99,7 +100,8 @@
             </div>
         </div>
   </div>
-
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 <script src="JS/Signup.js"></script>
 </body>
 </html>
