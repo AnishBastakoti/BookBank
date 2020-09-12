@@ -43,7 +43,7 @@ body{
   transform: translate(-50%, -50%) scale(1);
   transition: all 0.4s;
   transition-delay: 0.1s;
-  color:blue;
+  background-color:rgba(0,221,223);
 }
 
 .overlay{

@@ -3,14 +3,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 22rem;
+  width: 100%;
   padding: .5rem;
   box-sizing: border-box;
   border: 1px solid #dadce0;
-  overflow:hidden;
-  -webkit-border-radius: 8px;
   border-radius: 8px;
-  height:636px;
+  height:100%;
   background: #ddd;
 }
 .user-card{
@@ -29,11 +27,9 @@
 .info-btn{
   background-color: #333;
   color: #fff;
-  display: block;
   padding: 7px 54px;
   border-radius: 11px;
-  margin: 90px 63px;
-  cursor: pointer;
+  margin: 32px 63px;
 }
 .overlay {
   height: 0%;
@@ -71,7 +67,7 @@ label {
   font-size: 24px;
   text-align: center;
 }
-input[type=text]{
+.text{
   width: 70%;
   margin-bottom: 0px;
   padding: 11px;
@@ -133,4 +129,51 @@ button:hover{
   display: block;
   color: #000;
   text-align: center;
+}
+hr{
+  height:5px;
+  border-width:0;
+  background-color:#000;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0, 0.8);
+}
+
+.modal-content {
+  background-color: rgba(132, 106, 221, 0.9);
+  padding: 20px;
+  border: 4px solid #f1f1f1;
+  height: 100%;
+}
+
+.close {
+  color: #000;
+  float: right;
+  font-size: 51px;
+}
+.popupbox{
+  height: auto;
+  border-radius: 25px;
+  padding: 6px 13px 5px;
+  background-color: #f1f1f1;
+}
+form input, textarea{
+  display: block;
+  width: 80%;
+  background: #e6e6e6;
+  font-size: 23px;
+  line-height: 1.5;
+  color: #666;
+  height: 73px;
+  border-radius: 25px;
+  padding:0 23px;
+  margin-bottom: 32px;
 }

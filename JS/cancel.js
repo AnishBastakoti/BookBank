@@ -1,18 +1,13 @@
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-function goBack() {
-  window.history.go(0);
-}
 var modal = document.getElementById("Modal");
 var btn = document.getElementById("btn");
 var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
 }
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
 function validateForm() {
   var x = document.forms["form"]["fname"].value;
   if (x == "" || x == null) {

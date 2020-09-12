@@ -1,7 +1,7 @@
 @import "checkout.css";
 
 * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif; margin:0;  padding: 4%;}
+body {font-family: Verdana, sans-serif; margin:0;  padding: 4%; background-color: rgba(0,255,0,0.3);}
 .mySlides {display: none;}
 img {vertical-align: middle; width: 100%;}
 
@@ -10,6 +10,13 @@ img {vertical-align: middle; width: 100%;}
   position: relative;
   margin: auto;
   padding: 10px;
+}
+button{
+  color: #fff;
+  padding: 7px 36px;
+  background: blue;
+  border-radius: 12%;
+  margin:6px 92px;
 }
 
 .prev, .next {
